@@ -1,1 +1,5 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --tight: 1.2;
+}

@@ -1,10 +1,18 @@
-import { GameCell } from './game-cell';
-import { GameInfo } from './game-info';
-import { ResetButton } from './reset-button';
-import { useGameState } from './use-game-state';
+import { GameCell } from "./game-cell";
+import { GameInfo } from "./game-info";
+import { ResetButton } from "./reset-button";
+import { useGameState } from "./use-game-state";
 
 export function Game() {
-  const { cells, currentStep, winnerSymbol, isDraw, resetGame, toggleCell, getWinnerCell } = useGameState();
+  const {
+    cells,
+    currentStep,
+    winnerSymbol,
+    isDraw,
+    resetGame,
+    toggleCell,
+    getWinnerCell,
+  } = useGameState();
 
   return (
     <div className="flex flex-col items-center w-40 mx-auto my-24 border border-black p-5">
